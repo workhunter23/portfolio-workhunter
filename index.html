@@ -6,16 +6,32 @@
     <title>Грозный Лендинг</title>
     <style>
         body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            color: white;
-            background-color: rgba(10, 10, 10, 1); /* Темный фон с бордовым оттенком */
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: relative;
-            overflow: hidden;
+            body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1), rgba(128, 0, 0, 1));
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
         }
         .overlay {
             position: absolute;
